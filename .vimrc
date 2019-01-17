@@ -32,3 +32,6 @@ set cursorline
 
 "set mouse
 set mouse=a
+
+" refesh file 
+set autoread
