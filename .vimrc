@@ -10,6 +10,9 @@ syntax enable
 " set number-line
 set number
 
+" set open file on split right
+set splitright
+
 " set tabas to 2 
 set ts=2
 
