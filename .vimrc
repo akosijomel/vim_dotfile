@@ -1,5 +1,11 @@
-syntax enable
+call plug#begin('~/.vim/plugged')
+  " CTRL-P
+  Plug 'https://github.com/kien/ctrlp.vim'
+  " NERD TREE
+  Plug 'https://github.com/scrooloose/nerdtree.git'
+call plug#end()
 
+syntax enable
 
 " set number-line
 set number
