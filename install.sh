@@ -1,5 +1,7 @@
 #!/bin/bash
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 download_from_github() {
   wget "https://raw.githubusercontent.com/jomelmadia/vim_dotfile/master/.vimrc" -P /home/$USER/
 }
