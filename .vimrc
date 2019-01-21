@@ -4,6 +4,9 @@ call plug#begin('~/.vim/plugged')
   " NERD TREE
   Plug 'https://github.com/scrooloose/nerdtree.git'
   Plug 'https://github.com/tpope/vim-rails.git'
+  " Multiple Cursor
+  Plug 'https://github.com/terryma/vim-multiple-cursors.git'
+
 call plug#end()
 
 syntax enable
