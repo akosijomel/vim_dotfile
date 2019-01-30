@@ -26,10 +26,10 @@ set number
 set splitright
 
 " set tabas to 2 
-set ts = 2
+set ts=2
 
 " set width of indention 
-set sw = 2
+set sw=2
 
 " expand tabs to spaces 
 set expandtab
@@ -44,12 +44,12 @@ let python_highlight_all = 1
 set cursorline
 
 "set mouse
-set mouse = n
+set mouse=n
 
 " refesh file 
 set autoread
 
-set ttymouse = xterm2
+set ttymouse=xterm2
 
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
@@ -57,5 +57,4 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
-
-set foldmethod = indent 
+set foldmethod=indent 
