@@ -11,6 +11,11 @@
     ```  
     2. Copy .vimrc in your home directory.
 
+
+### For Reference and Plugin
+ 
+    https://vimawesome.com/
+
 ### Other way to install
   
  1. Copy *install.sh*  
