@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
   ":
   Plug 'honza/vim-snippets'
   Plug 'ervandew/supertab'
+  
 call plug#end()
 
 syntax enable
@@ -57,4 +58,9 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
-set foldmethod=indent 
+set foldmethod=manual
+
+let NERDTreeMinimalUI = 1
+
+" Close Nerdtree when file was openned 
+let NERDTreeQuitOnOpen = 1
