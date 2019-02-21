@@ -15,7 +15,13 @@ call plug#begin('~/.vim/plugged')
   ":
   Plug 'honza/vim-snippets'
   Plug 'ervandew/supertab'
-  
+
+  " Dark Theme
+  Plug 'tomasiser/vim-code-dark'
+ 
+  "icons
+  "Plug 'ryanoasis/vim-devicons'  
+
 call plug#end()
 
 syntax enable
@@ -62,5 +68,8 @@ set foldmethod=manual
 
 let NERDTreeMinimalUI = 1
 
-" Close Nerdtree when file was openned 
-let NERDTreeQuitOnOpen = 1
+" set NERDTree Size 
+let NERDTreeWinSize=20
+
+
+colorscheme codedark
