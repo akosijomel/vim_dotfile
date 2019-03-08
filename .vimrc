@@ -1,3 +1,7 @@
+"References:
+"https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
+"https://dougblack.io/words/a-good-vimrc.html#spaces
+"
 call plug#begin('~/.vim/plugged')
   " CTRL-P
   Plug 'https://github.com/kien/ctrlp.vim'
@@ -71,5 +75,7 @@ let NERDTreeMinimalUI = 1
 " set NERDTree Size 
 let NERDTreeWinSize=20
 
-
 colorscheme codedark
+
+" Word wrapping 
+set wrap!
