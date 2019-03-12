@@ -1,7 +1,8 @@
 "References:
 "https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
 "https://dougblack.io/words/a-good-vimrc.html#spaces
-"
+"https://janjiss.com/walkthrough-of-my-vimrc-file-for-ruby-development/
+
 call plug#begin('~/.vim/plugged')
   " CTRL-P
   Plug 'https://github.com/kien/ctrlp.vim'
@@ -25,6 +26,14 @@ call plug#begin('~/.vim/plugged')
  
   "icons
   "Plug 'ryanoasis/vim-devicons'  
+
+  " Dependencies of snipmate
+  Plug  'MarcWeber/vim-addon-mw-utils'
+  Plug  'tomtom/tlib_vim'
+  Plug  'honza/vim-snippets'
+  " " Snippets for our use :)
+  Plug 'garbas/vim-snipmate'
+
 
 call plug#end()
 
@@ -76,6 +85,10 @@ let NERDTreeMinimalUI = 1
 let NERDTreeWinSize=20
 
 colorscheme codedark
+
+" Autocomplete
+set wildmode=longest,list,full
+set wildmenu
 
 " Word wrapping 
 set wrap!
