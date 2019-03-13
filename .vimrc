@@ -33,7 +33,9 @@ call plug#begin('~/.vim/plugged')
   Plug  'honza/vim-snippets'
   " " Snippets for our use :)
   Plug 'garbas/vim-snipmate'
-
+  
+  " For pretty tab
+  Plug 'webdevel/tabulous'
 
 call plug#end()
 
@@ -68,6 +70,7 @@ set mouse=n
 
 " refesh file 
 set autoread
+au CursorHold * checktime  
 
 set ttymouse=xterm2
 
@@ -92,3 +95,4 @@ set wildmenu
 
 " Word wrapping 
 set wrap!
+
