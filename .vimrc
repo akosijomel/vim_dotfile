@@ -2,6 +2,7 @@
 "https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
 "https://dougblack.io/words/a-good-vimrc.html#spaces
 "https://janjiss.com/walkthrough-of-my-vimrc-file-for-ruby-development/
+"https://vimawesome.com
 
 call plug#begin('~/.vim/plugged')
   " CTRL-P
@@ -96,3 +97,5 @@ set wildmenu
 " Word wrapping 
 set wrap!
 
+" word highliting
+set hls is
