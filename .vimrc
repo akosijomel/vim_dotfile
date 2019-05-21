@@ -4,8 +4,14 @@
 "https://dougblack.io/words/a-good-vimrc.html#spaces
 "https://janjiss.com/walkthrough-of-my-vimrc-file-for-ruby-development/
 "https://vimawesome.com
+"https://medium.com/vim-drops/css-autocompletion-on-vim-no-plugins-needed-e8df9ce079c7
+" http://learnvimscriptthehardway.stevelosh.com/
 
 call plug#begin('~/.vim/plugged')
+
+
+  Plug 'yuttie/comfortable-motion.vim'
+
 
   " CTRL-P
   Plug 'https://github.com/kien/ctrlp.vim'
@@ -32,15 +38,21 @@ call plug#begin('~/.vim/plugged')
 
   " to change surround: cs "'
   Plug 'tpope/vim-surround'
-
+ 
+  " Themes for testing. Not final
+  Plug 'crusoexia/vim-monokai'
+  Plug 'tomasiser/vim-code-dark'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'patstockwell/vim-monokai-tasty'
+  Plug 'junegunn/seoul256.vim'
+  Plug 'chriskempson/base16-vim'
+  
   " youcompleteme
   Plug 'valloric/youcompleteme'
   Plug 'honza/vim-snippets'
   Plug 'ervandew/supertab'
 
-  " Dark Theme
-  Plug 'tomasiser/vim-code-dark'
- 
+
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
@@ -50,11 +62,14 @@ call plug#begin('~/.vim/plugged')
   Plug  'tomtom/tlib_vim'
   Plug  'honza/vim-snippets'
 
-  " " Snippets for our use :)
+  " Snippets for our use :)
   Plug 'garbas/vim-snipmate'
   
   " For pretty tab
   Plug 'webdevel/tabulous'
+
+  " Html autocomplete
+  Plug 'mattn/emmet-vim'
 
 call plug#end()
 
@@ -93,11 +108,14 @@ au CursorHold * checktime
 
 set ttymouse=xterm2
 
-set nocompatible      " We're running Vim, not Vi!
+" We're running Vim, not Vi!
+set nocompatible      
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
+
+set omnifunc=syntaxcomplete#Complete
 
 set foldmethod=manual
 
@@ -106,7 +124,20 @@ let NERDTreeMinimalUI = 1
 " set NERDTree Size 
 let NERDTreeWinSize=20
 
-colorscheme codedark
+" Theme and color
+"let g:vim_monokai_tasty_italic = 1
+"colo seoul256
+
+colorscheme vim-monokai-tasty
+"let g:seoul256_background = 252
+"colo seoul256
+"let base16colorspace=256 
+"colorscheme base16-default-dark
+colorscheme monokai
+
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 " Autocomplete
 set wildmode=longest,list,full
@@ -117,3 +148,8 @@ set wrap!
 
 " word highliting
 set hls is
+
+let g:user_emmet_leader_key=','
+
+
+set clipboard=unnamedplus
