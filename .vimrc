@@ -9,10 +9,6 @@
 
 call plug#begin('~/.vim/plugged')
 
-
-  Plug 'yuttie/comfortable-motion.vim'
-
-
   " CTRL-P
   Plug 'https://github.com/kien/ctrlp.vim'
   
