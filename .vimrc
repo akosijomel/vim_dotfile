@@ -121,7 +121,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeWinSize=20
 
 " Theme and color
-"let g:vim_monokai_tasty_italic = 1
+let g:vim_monokai_tasty_italic = 1
 "colo seoul256
 
 colorscheme vim-monokai-tasty
@@ -145,7 +145,10 @@ set wrap!
 " word highliting
 set hls is
 
+
+" emmer leader key. for autocomplete html
 let g:user_emmet_leader_key=','
 
+"let NERDTreeMapOpenInTab='<ENTER>'
 
 set clipboard=unnamedplus
