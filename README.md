@@ -11,6 +11,10 @@
     ```  
     2. Copy .vimrc in your home directory.
 
+### For YouCompleteMe Installation
+
+  Refer to the documentation
+  https://github.com/ycm-core/YouCompleteMe
 
 ### For Reference and Plugin
  
