@@ -1,4 +1,5 @@
 "References:
+"https://vim.rtorr.com://vim.rtorr.com/
 "https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
 "https://medium.com/@todariasova/rails-vim-101-essential-vim-plugins-for-ruby-on-rails-development-d74e808d186d
 "https://dougblack.io/words/a-good-vimrc.html#spaces
@@ -14,8 +15,8 @@ call plug#begin('~/.vim/plugged')
   
   " NERD TREE
   Plug 'https://github.com/scrooloose/nerdtree.git'
-  
-  " rails specific 
+  Plug 'tomtom/tcomment_vim'
+  " " rails specific 
   Plug 'tpope/vim-rails'
   
   " Multiple Cursor
@@ -24,7 +25,7 @@ call plug#begin('~/.vim/plugged')
   " The Nerd Commenter
   " check link for documentation
   " https://vimawesome.com/plugin/the-nerd-commenter
-  Plug 'scrooloose/nerdcommenter'
+  "Plug 'scrooloose/nerdcommenter'
 
   " Vim Ruby
   Plug 'vim-ruby/vim-ruby'
@@ -66,6 +67,9 @@ call plug#begin('~/.vim/plugged')
 
   " Html autocomplete
   Plug 'mattn/emmet-vim'
+
+  " Angular Syntax
+  Plug 'burnettk/vim-angular'
 
 call plug#end()
 
@@ -146,7 +150,7 @@ set wrap!
 set hls is
 
 
-" emmer leader key. for autocomplete html
+" emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
 
 "let NERDTreeMapOpenInTab='<ENTER>'
