@@ -15,17 +15,15 @@ call plug#begin('~/.vim/plugged')
   
   " NERD TREE
   Plug 'https://github.com/scrooloose/nerdtree.git'
+
+  " gcc to comment
   Plug 'tomtom/tcomment_vim'
+  
   " " rails specific 
   Plug 'tpope/vim-rails'
   
   " Multiple Cursor
   Plug 'https://github.com/terryma/vim-multiple-cursors.git'
-
-  " The Nerd Commenter
-  " check link for documentation
-  " https://vimawesome.com/plugin/the-nerd-commenter
-  "Plug 'scrooloose/nerdcommenter'
 
   " Vim Ruby
   Plug 'vim-ruby/vim-ruby'
@@ -43,26 +41,20 @@ call plug#begin('~/.vim/plugged')
   Plug 'patstockwell/vim-monokai-tasty'
   Plug 'junegunn/seoul256.vim'
   Plug 'chriskempson/base16-vim'
+  Plug 'nightsense/carbonized'
   
-  " youcompleteme
-  Plug 'valloric/youcompleteme'
-  Plug 'honza/vim-snippets'
-  Plug 'ervandew/supertab'
-
-
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
-
-  " Dependencies of snipmate
-  Plug  'MarcWeber/vim-addon-mw-utils'
-  Plug  'tomtom/tlib_vim'
-  Plug  'honza/vim-snippets'
-
-  " Snippets for our use :)
-  Plug 'garbas/vim-snipmate'
+  " Plug 'msanders/snipmate.vim'
+  Plug 'garbas/vim-snipmate' 
+  Plug 'MarcWeber/vim-addon-mw-utils'
+  Plug 'tomtom/tlib_vim'
+  "
+  Plug 'honza/vim-snippets'
   
-  " For pretty tab
+  
+  "For pretty tab
   Plug 'webdevel/tabulous'
 
   " Html autocomplete
@@ -109,7 +101,7 @@ au CursorHold * checktime
 set ttymouse=xterm2
 
 " We're running Vim, not Vi!
-set nocompatible      
+" set nocompatible      
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -128,13 +120,12 @@ let NERDTreeWinSize=20
 let g:vim_monokai_tasty_italic = 1
 "colo seoul256
 
-colorscheme vim-monokai-tasty
+" colorscheme vim-monokai-tasty
 "let g:seoul256_background = 252
 "colo seoul256
 "let base16colorspace=256 
-"colorscheme base16-default-dark
+"  colorscheme tender
 colorscheme monokai
-
 "syntax enable
 "set background=dark
 "colorscheme solarized
@@ -148,7 +139,6 @@ set wrap!
 
 " word highliting
 set hls is
-
 
 " emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
