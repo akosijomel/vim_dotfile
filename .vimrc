@@ -53,7 +53,6 @@ call plug#begin('~/.vim/plugged')
   "
   Plug 'honza/vim-snippets'
   
-  
   "For pretty tab
   Plug 'webdevel/tabulous'
 
@@ -109,12 +108,13 @@ filetype plugin on    " Enable filetype-specific plugins
 
 set omnifunc=syntaxcomplete#Complete
 
+" set foldmethod=indent
 set foldmethod=manual
 
 let NERDTreeMinimalUI = 1
 
 " set NERDTree Size 
-let NERDTreeWinSize=20
+let NERDTreeWinSize=33
 
 " Theme and color
 let g:vim_monokai_tasty_italic = 1
@@ -143,6 +143,16 @@ set hls is
 " emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
 
-"let NERDTreeMapOpenInTab='<ENTER>'
+" let NERDTreeMapOpenInTab='<ENTER>'
 
 set clipboard=unnamedplus
+
+set modifiable
+
+" au VimEnter * NERDTreeFind
+
+" Keep all folds open when a file is opened
+augroup OpenAllFoldsOnFileOpen
+    autocmd!
+    autocmd BufRead * normal zR
+augroup END
