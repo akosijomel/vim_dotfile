@@ -149,10 +149,13 @@ set clipboard=unnamedplus
 
 set modifiable
 
+"show current direction of a file 
+set laststatus=2
+set statusline=%!getcwd()
+
+
 " au VimEnter * NERDTreeFind
 
 " Keep all folds open when a file is opened
 augroup OpenAllFoldsOnFileOpen
     autocmd!
-    autocmd BufRead * normal zR
-augroup END
