@@ -149,10 +149,9 @@ set clipboard=unnamedplus
 
 set modifiable
 
-"show current direction of a file 
+" "show current direction of a file 
 set laststatus=2
-set statusline=%!getcwd()
-
+set statusline+=%F
 
 " au VimEnter * NERDTreeFind
 
