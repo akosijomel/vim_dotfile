@@ -11,7 +11,9 @@ if [[ -e /home/$USER/.vimrc ]]; then
   rm /home/$USER/.vimrc
   download_from_github
   echo  "Your .vimrc file was replaced"
+  echo  "Run `:PlugInstall` inside vim"
 else
   download_from_github
   echo ".vimrc file was downloaded from the repository"
+  echo  "Run `:PlugInstall` inside vim"
 fi
