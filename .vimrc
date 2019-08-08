@@ -1,3 +1,19 @@
+" ========================================================
+" __     ___           ____        _   _____ _ _      
+" \ \   / (_)_ __ ___ |  _ \  ___ | |_|  ___(_) | ___ 
+"  \ \ / /| | '_ ` _ \| | | |/ _ \| __| |_  | | |/ _ \
+"   \ V / | | | | | | | |_| | (_) | |_|  _| | | |  __/
+"    \_/  |_|_| |_| |_|____/ \___/ \__|_|   |_|_|\___|
+"
+"     https://github.com/jomelmadia/vim_dotfile 
+" ========================================================
+
+"  TO DO 
+"  1. leader key
+"  2. wrap word 
+"  3. type of buffer
+"  4. response time for changing mode
+  
 "References:
 "https://vim.rtorr.com://vim.rtorr.com/
 "https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
@@ -7,19 +23,23 @@
 "https://vimawesome.com
 "https://medium.com/vim-drops/css-autocompletion-on-vim-no-plugins-needed-e8df9ce079c7
 " http://learnvimscriptthehardway.stevelosh.com/
-
+" https://hashrocket.com/blog/posts/8-great-vim-mappings
+" https://jeffkreeftmeijer.com/vim-number/
 call plug#begin('~/.vim/plugged')
 
   " CTRL-P
-  Plug 'https://github.com/kien/ctrlp.vim'
+   Plug 'https://github.com/kien/ctrlp.vim'
   
   " NERD TREE
   Plug 'https://github.com/scrooloose/nerdtree.git'
 
   " gcc to comment
-  Plug 'tomtom/tcomment_vim'
+   Plug 'tomtom/tcomment_vim'
+ 
+  " Another commenting Plugin. Same with  tcomment_vim
+"  Plug 'tpope/vim-commentary'
   
-  " " rails specific 
+  " rails specific 
   Plug 'tpope/vim-rails'
   
   " Multiple Cursor
@@ -63,6 +83,17 @@ call plug#begin('~/.vim/plugged')
   Plug 'burnettk/vim-angular'
 
 call plug#end()
+
+
+" colorscheme vim-monokai-tasty
+"let g:seoul256_background = 252
+"colo seoul256
+"let base16colorspace=256 
+"  colorscheme tender
+colorscheme monokai
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 syntax enable
 
@@ -120,15 +151,6 @@ let NERDTreeWinSize=33
 let g:vim_monokai_tasty_italic = 1
 "colo seoul256
 
-" colorscheme vim-monokai-tasty
-"let g:seoul256_background = 252
-"colo seoul256
-"let base16colorspace=256 
-"  colorscheme tender
-colorscheme monokai
-"syntax enable
-"set background=dark
-"colorscheme solarized
 
 " Autocomplete
 set wildmode=longest,list,full
@@ -138,7 +160,7 @@ set wildmenu
 set wrap!
 
 " word highliting
-set hls is
+ set hls is
 
 " emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
@@ -151,10 +173,17 @@ set modifiable
 
 " "show current direction of a file 
 set laststatus=2
-set statusline+=%F
+" set statusline+=%F
 
+" Set number line to relative
+set number relativenumber
 " au VimEnter * NERDTreeFind
 
-" Keep all folds open when a file is opened
-augroup OpenAllFoldsOnFileOpen
-    autocmd!
+" Personal VIM Keymapping 
+noremap <leader>q :q<cr>
+noremap <leader>w :w<cr>
+
+set ttimeout
+set ttimeoutlen=100
+set timeoutlen=3000
+
