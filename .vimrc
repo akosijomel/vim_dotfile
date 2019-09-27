@@ -34,12 +34,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'https://github.com/scrooloose/nerdtree.git'
 
   " gcc to comment
-   Plug 'tomtom/tcomment_vim'
+  Plug 'tomtom/tcomment_vim'
  
-   " Another commenting Plugin. Same with  tcomment_vim
-   "  Plug 'tpope/vim-commentary'
-
-   " Multiple Cursor
+  "  specific 
+  Plug 'tpope/vim-rails'
+  
+  " Multiple Cursor
   Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 
   " Vim Ruby
