@@ -27,6 +27,9 @@
 "https://jeffkreeftmeijer.com/vim-number/
 call plug#begin('~/.vim/plugged')
 
+  " Supertab
+  Plug 'ervandew/supertab'
+   
   " CTRL-P
    Plug 'https://github.com/kien/ctrlp.vim'
   
