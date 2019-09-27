@@ -17,14 +17,14 @@
 "References:
 "https://vim.rtorr.com://vim.rtorr.com/
 "https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
-"https://medium.com/@todariasova/rails-vim-101-essential-vim-plugins-for-ruby-on-rails-development-d74e808d186d
+"https://medium.com/@todariasova/-vim-101-essential-vim-plugins-for-ruby-on-rails-development-d74e808d186d
 "https://dougblack.io/words/a-good-vimrc.html#spaces
 "https://janjiss.com/walkthrough-of-my-vimrc-file-for-ruby-development/
 "https://vimawesome.com
 "https://medium.com/vim-drops/css-autocompletion-on-vim-no-plugins-needed-e8df9ce079c7
-" http://learnvimscriptthehardway.stevelosh.com/
-" https://hashrocket.com/blog/posts/8-great-vim-mappings
-" https://jeffkreeftmeijer.com/vim-number/
+"http://learnvimscriptthehardway.stevelosh.com/
+"https://hashrocket.com/blog/posts/8-great-vim-mappings
+"https://jeffkreeftmeijer.com/vim-number/
 call plug#begin('~/.vim/plugged')
 
   " CTRL-P
@@ -36,13 +36,10 @@ call plug#begin('~/.vim/plugged')
   " gcc to comment
    Plug 'tomtom/tcomment_vim'
  
-  " Another commenting Plugin. Same with  tcomment_vim
-"  Plug 'tpope/vim-commentary'
-  
-  " rails specific 
-  Plug 'tpope/vim-rails'
-  
-  " Multiple Cursor
+   " Another commenting Plugin. Same with  tcomment_vim
+   "  Plug 'tpope/vim-commentary'
+
+   " Multiple Cursor
   Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 
   " Vim Ruby
@@ -82,6 +79,10 @@ call plug#begin('~/.vim/plugged')
   " Angular Syntax
   Plug 'burnettk/vim-angular'
 
+  "Bash Support
+  Plug 'vim-scripts/bash-support.vim'
+
+
 call plug#end()
 
 
@@ -92,9 +93,9 @@ call plug#end()
 "  colorscheme tender
 colorscheme monokai
 "syntax enable
-"set background=dark
-"colorscheme solarized
-
+set background=dark
+" colorscheme solarized
+"
 syntax enable
 
 " set number-line
