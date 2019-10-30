@@ -82,9 +82,11 @@ call plug#begin('~/.vim/plugged')
   " Angular Syntax
   Plug 'burnettk/vim-angular'
 
+  " Angular Syntax
+  Plug 'leafgarland/typescript-vim'
+ 
   "Bash Support
   Plug 'vim-scripts/bash-support.vim'
-
 
 call plug#end()
 
