@@ -22,4 +22,4 @@
 
 ### Other way to install
   
-    Clone and  run  *install.sh*  
+  Clone and  run  *install.sh*  
