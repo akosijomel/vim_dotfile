@@ -22,7 +22,4 @@
 
 ### Other way to install
   
- 1. Copy *install.sh*  
- 2. Change to executable file
-    ``` chmod +x install.sh```
- 3. Run *./install.sh* 
+    Clone and  run  *install.sh*  
