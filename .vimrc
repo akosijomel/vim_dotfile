@@ -104,12 +104,11 @@ set background=dark
 syntax enable
 
 " set number-line
-set number
 
 " set open file on split right
 set splitright
 
-" set tabas to 2 
+" set tabs to 2 
 set ts=2
 
 " set width of indention 
@@ -137,7 +136,7 @@ au CursorHold * checktime
 set ttymouse=xterm2
 
 " We're running Vim, not Vi!
-" set nocompatible      
+set nocompatible      
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -148,10 +147,9 @@ set omnifunc=syntaxcomplete#Complete
 " set foldmethod=indent
 set foldmethod=manual
 
-let NERDTreeMinimalUI = 1
-
 " set NERDTree Size 
 let NERDTreeWinSize=33
+let NERDTreeMinimalUI = 1
 
 " Theme and color
 let g:vim_monokai_tasty_italic = 1
