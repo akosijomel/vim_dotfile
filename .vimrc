@@ -41,9 +41,6 @@ call plug#begin('~/.vim/plugged')
  
   "  specific 
   Plug 'tpope/vim-rails'
-  
-  " Multiple Cursor
-  Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 
   " Vim Ruby
   Plug 'vim-ruby/vim-ruby'
@@ -62,7 +59,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/seoul256.vim'
   Plug 'chriskempson/base16-vim'
   Plug 'nightsense/carbonized'
-  
+
+  " you complete me
+  " Plug 'ycm-core/YouCompleteMe'  
+  Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'  } 
+
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
@@ -97,13 +98,9 @@ call plug#end()
 "let base16colorspace=256 
 "  colorscheme tender
 colorscheme monokai
-"syntax enable
 set background=dark
-" colorscheme solarized
-"
-syntax enable
 
-" set number-line
+syntax enable
 
 " set open file on split right
 set splitright
