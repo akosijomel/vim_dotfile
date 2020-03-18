@@ -39,12 +39,12 @@ call plug#begin('~/.vim/plugged')
   " gcc to comment
   Plug 'tomtom/tcomment_vim'
  
-  "  specific 
+  " rails specific 
   Plug 'tpope/vim-rails'
 
   " Vim Ruby
   Plug 'vim-ruby/vim-ruby'
-
+  
   "Auto pair brackets
   Plug 'jiangmiao/auto-pairs'
 
@@ -138,6 +138,8 @@ syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
+filetype plugin indent on
+set number relativenumber
 
 set omnifunc=syntaxcomplete#Complete
 
@@ -150,23 +152,19 @@ let NERDTreeMinimalUI = 1
 
 " Theme and color
 let g:vim_monokai_tasty_italic = 1
-"colo seoul256
-
 
 " Autocomplete
 set wildmode=longest,list,full
 set wildmenu
 
-" Word wrapping 
+" Word wrappingset wrap!   
 set wrap!
 
 " word highliting
- set hls is
+"  set hls is
 
 " emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
-
-" let NERDTreeMapOpenInTab='<ENTER>'
 
 set clipboard=unnamedplus
 
@@ -174,17 +172,13 @@ set modifiable
 
 " "show current direction of a file 
 set laststatus=2
-" set statusline+=%F
-
-" Set number line to relative
-set number relativenumber
-" au VimEnter * NERDTreeFind
-
-" Personal VIM Keymapping 
-noremap <leader>q :q<cr>
-noremap <leader>w :w<cr>
+set statusline+=%F
 
 set ttimeout
 set ttimeoutlen=100
 set timeoutlen=3000
 
+" Personal VIM Keymapping 
+noremap <leader>q :q<cr>
+noremap <leader>w :w<cr>
+snoremap <leader><space> :noh<cr>
