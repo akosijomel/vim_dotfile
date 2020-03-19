@@ -67,7 +67,7 @@ call plug#begin('~/.vim/plugged')
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
-  " Plug 'msanders/snipmate.vim'
+  Plug 'msanders/snipmate.vim'
   Plug 'garbas/vim-snipmate' 
   Plug 'tomtom/tlib_vim'
   "
