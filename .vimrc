@@ -39,12 +39,6 @@ call plug#begin('~/.vim/plugged')
   " gcc to comment
   Plug 'tomtom/tcomment_vim'
  
-  " rails specific 
-  Plug 'tpope/vim-rails'
-
-  " Vim Ruby
-  Plug 'vim-ruby/vim-ruby'
-  
   "Auto pair brackets
   Plug 'jiangmiao/auto-pairs'
 
@@ -77,6 +71,12 @@ call plug#begin('~/.vim/plugged')
   "For pretty tab
   Plug 'webdevel/tabulous'
 
+  " rails specific 
+  Plug 'tpope/vim-rails'
+
+  " Vim Ruby
+  Plug 'vim-ruby/vim-ruby'
+  
   " Html autocomplete
   Plug 'mattn/emmet-vim'
 
