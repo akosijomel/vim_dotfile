@@ -28,10 +28,10 @@
 call plug#begin('~/.vim/plugged')
 
   " Supertab
-  Plug 'ervandew/supertab'
+  Plug 'ervandew/supertab' 
    
   " CTRL-P
-   Plug 'https://github.com/kien/ctrlp.vim'
+  Plug 'kien/ctrlp.vim'
   
   " NERD TREE
   Plug 'preservim/nerdtree'
