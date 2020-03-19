@@ -161,7 +161,7 @@ set wildmenu
 set wrap!
 
 " word highliting
-"  set hls is
+ set hls is
 
 " emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
@@ -181,4 +181,4 @@ set timeoutlen=3000
 " Personal VIM Keymapping 
 noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
-snoremap <leader><space> :noh<cr>
+noremap <leader><space> :noh<cr>
