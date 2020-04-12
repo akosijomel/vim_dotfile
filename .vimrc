@@ -53,22 +53,14 @@ call plug#begin('~/.vim/plugged')
  
   " Themes for testing. Not final
   Plug 'crusoexia/vim-monokai'
-  Plug 'tomasiser/vim-code-dark'
-  Plug 'altercation/vim-colors-solarized'
-  Plug 'patstockwell/vim-monokai-tasty'
-  Plug 'junegunn/seoul256.vim'
-  Plug 'chriskempson/base16-vim'
-  Plug 'nightsense/carbonized'
 
-  " you complete me
-  " Plug 'ycm-core/YouCompleteMe'  
-  Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'  } 
 
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
-  Plug 'msanders/snipmate.vim'
+  " Snipmate
   Plug 'garbas/vim-snipmate' 
+  Plug 'MarcWeber/vim-addon-mw-utils'
   Plug 'tomtom/tlib_vim'
   "
   Plug 'honza/vim-snippets'
@@ -133,14 +125,14 @@ set ttymouse=xterm2
 
 " We're running Vim, not Vi!
 set nocompatible      
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
+syntax on             
+filetype on           
+filetype indent on    
+filetype plugin on    
 filetype plugin indent on
-set number relativenumber
-
 set omnifunc=syntaxcomplete#Complete
+
+set number relativenumber
 
 " set foldmethod=indent
 set foldmethod=manual
@@ -148,9 +140,6 @@ set foldmethod=manual
 " set NERDTree Size 
 let NERDTreeWinSize=33
 let NERDTreeMinimalUI = 1
-
-" Theme and color
-let g:vim_monokai_tasty_italic = 1
 
 " Autocomplete
 set wildmode=longest,list,full
@@ -160,7 +149,7 @@ set wildmenu
 set wrap!
 
 " word highliting
- set hls is
+set hls is
 
 " emmet leader key. for autocomplete html
 let g:user_emmet_leader_key=','
