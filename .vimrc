@@ -160,7 +160,16 @@ set modifiable
 
 " "show current direction of a file 
 set laststatus=2
-set statusline+=%F
+
+set statusline=
+set statusline+=%f
+set statusline+=%#LineNr#
+" set statusline+=%m
+set statusline+=%=
+" set statusline+=%#CursorColumn#
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
 
 set ttimeout
 set ttimeoutlen=100
