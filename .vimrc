@@ -179,4 +179,4 @@ set timeoutlen=3000
 noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
 noremap <leader><space> :noh<cr>
-noremap <leader>f :NERDTreeToggle %<cr>
+noremap <leader>f :NERDTreeToggle <cr>
