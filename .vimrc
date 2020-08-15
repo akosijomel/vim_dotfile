@@ -175,8 +175,13 @@ set ttimeout
 set ttimeoutlen=100
 set timeoutlen=3000
 
+" NERDTree Number line
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
+
 " Personal VIM Keymapping 
 noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
 noremap <leader><space> :noh<cr>
-noremap <leader>f :NERDTreeToggle <cr>
+noremap <leader>F :tabdo NERDTreeToggle <cr>
+noremap <leader>r :so $MYVIMRC <cr>
