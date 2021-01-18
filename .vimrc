@@ -53,8 +53,8 @@ call plug#begin('~/.vim/plugged')
  
   " Themes for testing. Not final
   Plug 'crusoexia/vim-monokai'
-
-
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'jacoborus/tender.vim'
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
@@ -80,18 +80,22 @@ call plug#begin('~/.vim/plugged')
   "Bash Support
   Plug 'vim-scripts/bash-support.vim'
 
+  Plug 'valloric/MatchTagAlways'
 call plug#end()
 
 
 " colorscheme vim-monokai-tasty
+" colorscheme monokai
 "let g:seoul256_background = 252
 "colo seoul256
-"let base16colorspace=256 
-"  colorscheme tender
-colorscheme monokai
+let base16colorspace=256 
+"colorscheme tender
+colorscheme solarized
 set background=dark
-
+" set termguicolors
+set t_Co=256
 syntax enable
+" let g:lightline = { 'colorscheme': 'tender'  }
 
 " set open file on split right
 set splitright
