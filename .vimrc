@@ -27,6 +27,9 @@
 "https://jeffkreeftmeijer.com/vim-number/
 call plug#begin('~/.vim/plugged')
 
+  " Game code break
+  Plug 'johngrib/vim-game-code-break'
+ 
   " Supertab
   Plug 'ervandew/supertab' 
    
