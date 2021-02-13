@@ -18,7 +18,7 @@
 
 ### For Reference and Plugin
  
-    https://vimawesome.com/
+  https://vimawesome.com/
 
 ### Other way to install
   
