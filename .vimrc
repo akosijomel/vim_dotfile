@@ -80,6 +80,8 @@ call plug#begin('~/.vim/plugged')
   " Angular Syntax
   Plug 'leafgarland/typescript-vim'
  
+ " JSX hightlight 
+ Plug 'maxmellon/vim-jsx-pretty'
 
   Plug 'valloric/MatchTagAlways'
 call plug#end()
