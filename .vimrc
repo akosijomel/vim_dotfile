@@ -28,11 +28,20 @@
 call plug#begin('~/.vim/plugged')
 
   " Game code break
-  Plug 'johngrib/vim-game-code-break'
- 
+  Plug 'valloric/youcompleteme'
+
+  " Plug 'shawncplus/phpcomplete.vim'
+
+
+  " Plug 'ryanoasis/vim-devicons'  
+  " set encoding=UTF-8 
+
   " Supertab
   Plug 'ervandew/supertab' 
    
+  Plug 'junegunn/fzf.vim'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }  
+  
   " CTRL-P
   Plug 'kien/ctrlp.vim'
   
@@ -80,8 +89,8 @@ call plug#begin('~/.vim/plugged')
   " Angular Syntax
   Plug 'leafgarland/typescript-vim'
  
- " JSX hightlight 
- Plug 'maxmellon/vim-jsx-pretty'
+  " JSX hightlight 
+  Plug 'maxmellon/vim-jsx-pretty'
 
   Plug 'valloric/MatchTagAlways'
 call plug#end()
@@ -149,8 +158,8 @@ let NERDTreeWinSize=33
 let NERDTreeMinimalUI = 1
 
 " Autocomplete
-set wildmode=longest,list,full
-set wildmenu
+" set wildmode=longest,list,full
+" set wildmenu
 
 " Word wrappingset wrap!   
 set wrap!
@@ -186,9 +195,13 @@ set timeoutlen=3000
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 
+" snipmate parser version
+let g:snipMate = { 'snippet_version' : 1  }                                                                                                        
+
+
 " Personal VIM Keymapping 
 noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
 noremap <leader><space> :noh<cr>
-noremap <leader>F :tabdo NERDTreeToggle <cr>
 noremap <leader>r :so $MYVIMRC <cr>
+nnoremap <silent> <C-f> :Files<CR>
