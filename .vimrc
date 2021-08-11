@@ -36,6 +36,9 @@ call plug#begin('~/.vim/plugged')
   " Plug 'ryanoasis/vim-devicons'  
   " set encoding=UTF-8 
 
+  " git command for vim   
+  Plug 'tpope/vim-fugitive'
+  
   " Supertab
   Plug 'ervandew/supertab' 
    
