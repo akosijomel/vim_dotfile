@@ -38,7 +38,10 @@ call plug#begin('~/.vim/plugged')
 
   " git command for vim   
   Plug 'tpope/vim-fugitive'
-  
+ 
+  " Show git changes in a file 
+  Plug 'airblade/vim-gitgutter'
+
   " Supertab
   Plug 'ervandew/supertab' 
    
