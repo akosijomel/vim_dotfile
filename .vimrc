@@ -225,3 +225,4 @@ noremap <leader>r :so $MYVIMRC <cr>
 nnoremap <silent> <C-f> :Files<CR>
 nnoremap <leader>gst :Gstatus<CR>
 nnoremap <leader>gl :Gclog<CR>
+nnoremap <leader>gcm :Git commit<CR>
