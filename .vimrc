@@ -45,8 +45,8 @@ call plug#begin('~/.vim/plugged')
   " Supertab
   Plug 'ervandew/supertab' 
    
-  Plug 'junegunn/fzf.vim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }  
+  Plug 'junegunn/fzf.vim'
   
   " CTRL-P
   Plug 'kien/ctrlp.vim'
@@ -71,8 +71,11 @@ call plug#begin('~/.vim/plugged')
  
   " Themes for testing. Not final
   Plug 'crusoexia/vim-monokai'
+  Plug 'morhetz/gruvbox'
+  Plug 'junegunn/seoul256.vim'
   Plug 'altercation/vim-colors-solarized'
   Plug 'jacoborus/tender.vim'
+  Plug 'chriskempson/tomorrow-theme'
   " Bootstrap snippets
   Plug 'jvanja/vim-bootstrap4-snippets'
 
@@ -101,14 +104,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'valloric/MatchTagAlways'
 call plug#end()
 
-
 " colorscheme vim-monokai-tasty
 " colorscheme monokai
 "let g:seoul256_background = 252
-"colo seoul256
-let base16colorspace=256 
-"colorscheme tender
+" colo seoul256
+" let base16colorspace=256 
+" colorscheme tender
 colorscheme solarized
+" colorscheme gruvbox
+
+" colorscheme tomorrow-theme
 set background=dark
 " set termguicolors
 set t_Co=256
@@ -159,7 +164,15 @@ set number relativenumber
 " set foldmethod=indent
 set foldmethod=manual
 
-" set NERDTree Size 
+let g:gitgutter_override_sign_column_highlight = 0
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=4
+
+set updatetime=100
+"" set NERDTree Size 
 let NERDTreeWinSize=33
 let NERDTreeMinimalUI = 1
 
@@ -203,11 +216,12 @@ autocmd FileType nerdtree setlocal relativenumber
 
 " snipmate parser version
 let g:snipMate = { 'snippet_version' : 1  }                                                                                                        
-
-
+ 
 " Personal VIM Keymapping 
 noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
 noremap <leader><space> :noh<cr>
 noremap <leader>r :so $MYVIMRC <cr>
 nnoremap <silent> <C-f> :Files<CR>
+nnoremap <leader>gst :Gstatus<CR>
+nnoremap <leader>gl :Gclog<CR>
