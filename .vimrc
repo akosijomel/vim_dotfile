@@ -48,9 +48,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }  
   Plug 'junegunn/fzf.vim'
   
-  " CTRL-P
-  Plug 'kien/ctrlp.vim'
-  
   " NERD TREE
   Plug 'preservim/nerdtree'
 
