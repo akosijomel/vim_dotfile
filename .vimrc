@@ -36,6 +36,9 @@ call plug#begin('~/.vim/plugged')
   " Plug 'ryanoasis/vim-devicons'  
   " set encoding=UTF-8 
 
+  " CSS color preview
+  Plug 'ap/vim-css-color' 
+ 
   " git command for vim   
   Plug 'tpope/vim-fugitive'
  
