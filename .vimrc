@@ -9,10 +9,8 @@
 " ========================================================
 
 "  TO DO 
-"  1. leader key
-"  2. wrap word 
-"  3. type of buffer
-"  4. response time for changing mode
+"  -. wrap word 
+"  -. type of buffer
   
 "References:
 "https://vim.rtorr.com://vim.rtorr.com/
