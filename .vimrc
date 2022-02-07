@@ -30,7 +30,6 @@ call plug#begin('~/.vim/plugged')
 
   " Plug 'shawncplus/phpcomplete.vim'
 
-
   " Plug 'ryanoasis/vim-devicons'  
   " set encoding=UTF-8 
 
@@ -225,3 +224,4 @@ nnoremap <leader>gst :Gstatus<CR>
 nnoremap <leader>gl :Gclog<CR>
 nnoremap <leader>gcm :Git commit<CR>
 nnoremap <leader>gb :Git blame<CR>
+nnoremap <leader>gp :Git push origin HEAD<CR>
