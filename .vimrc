@@ -107,8 +107,8 @@ call plug#end()
 " colo seoul256
 " let base16colorspace=256 
 " colorscheme tender
-colorscheme solarized
-" colorscheme gruvbox
+" colorscheme solarized
+colorscheme gruvbox
 
 " colorscheme tomorrow-theme
 set background=dark
