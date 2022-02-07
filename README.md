@@ -1,15 +1,14 @@
 # Vim config file
+- [Vim-plug](https://github.com/junegunn/vim-plug) for plugin manager.
 
-    [Vim-plug](https://github.com/junegunn/vim-plug) for plugin manager
-  
-    1. Run in terminal to install to install Vim-Plugin. 
- 
-    ```sh
-      curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-          https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    ```  
+  1. Run in terminal to install to install Vim-Plugin. 
 
-    2. Copy .vimrc in your `~/home/$USER`.
+  ```sh
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  ```  
+
+  2. Copy .vimrc in your `~/home/$USER`.
 
 ### Installation
   
