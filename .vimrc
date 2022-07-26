@@ -98,7 +98,13 @@ call plug#begin('~/.vim/plugged')
   " JSX hightlight 
   Plug 'maxmellon/vim-jsx-pretty'
 
+  " Javascript
+  Plug 'pangloss/vim-javascript'
+
   Plug 'valloric/MatchTagAlways'
+
+  " MD preview
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
 
 " colorscheme vim-monokai-tasty
@@ -220,7 +226,7 @@ noremap <leader>w :w<cr>
 noremap <leader><space> :noh<cr>
 noremap <leader>r :so $MYVIMRC <cr>
 nnoremap <silent> <C-f> :Files<CR>
-nnoremap <leader>gst :Gstatus<CR>
+nnoremap <leader>gst :Git<CR>
 nnoremap <leader>gl :Gclog<CR>
 nnoremap <leader>gcm :Git commit<CR>
 nnoremap <leader>gb :Git blame<CR>
